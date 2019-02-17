@@ -6,4 +6,8 @@
 //  Copyright © 2019 Pavel Shatalov. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+protocol BaseView: NSObjectProtocol, Presentable { }
+
+extension UIViewController: BaseView { }
