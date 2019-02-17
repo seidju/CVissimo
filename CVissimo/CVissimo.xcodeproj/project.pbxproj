@@ -17,6 +17,7 @@
 		8B9D895E22194C16005367BD /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D895D22194C16005367BD /* BaseView.swift */; };
 		8B9D896022194CCB005367BD /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D895F22194CCB005367BD /* Router.swift */; };
 		8B9D896222194CE3005367BD /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D896122194CE3005367BD /* BaseRouter.swift */; };
+		8B9D896422194D66005367BD /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D896322194D66005367BD /* ApplicationCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		8B9D895D22194C16005367BD /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		8B9D895F22194CCB005367BD /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		8B9D896122194CE3005367BD /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		8B9D896322194D66005367BD /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				8B9D89382219458D005367BD /* AppDelegate.swift */,
+				8B9D896322194D66005367BD /* ApplicationCoordinator.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				8B9D895622194B9B005367BD /* BaseCoordinator.swift in Sources */,
 				8B9D896022194CCB005367BD /* Router.swift in Sources */,
 				8B9D895E22194C16005367BD /* BaseView.swift in Sources */,
+				8B9D896422194D66005367BD /* ApplicationCoordinator.swift in Sources */,
 				8B9D895C22194BFD005367BD /* Presentable.swift in Sources */,
 				8B9D895822194BBE005367BD /* Coordinator.swift in Sources */,
 				8B9D896222194CE3005367BD /* BaseRouter.swift in Sources */,
