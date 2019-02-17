@@ -19,8 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let coordinator = ApplicationCoordinator(router: router)
     return coordinator
   }()
-  
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+
+  func application(_ application: UIApplication,
+                   didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     setupWindow()
     applicaitonCoordinator.start()
     return true
@@ -34,4 +35,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     self.window = window
   }
 }
-

@@ -9,12 +9,11 @@
 import Foundation
 
 final class ApplicationCoordinator: BaseCoordinator {
-  
+
   private let router: Router
-  
+
   init(router: Router) {
     self.router = router
   }
-  
-  
+
 }

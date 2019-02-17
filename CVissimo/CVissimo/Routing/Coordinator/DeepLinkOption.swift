@@ -9,9 +9,9 @@
 import Foundation
 
 enum DeepLinkOption {
-  
+
   case unknown
-  
+
   static func build(with url: URL) -> DeepLinkOption? {
     return nil
   }
