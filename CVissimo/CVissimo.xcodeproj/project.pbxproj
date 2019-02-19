@@ -25,6 +25,7 @@
 		8B9D8981221990F4005367BD /* UserDefaultsStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D8980221990F4005367BD /* UserDefaultsStorageTests.swift */; };
 		8B9D8983221BCE01005367BD /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D8982221BCE01005367BD /* UserDefaultsStorage.swift */; };
 		8B9D8985221BCE7E005367BD /* KeyValueStorageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D8984221BCE7E005367BD /* KeyValueStorageError.swift */; };
+		8B9D8987221BD1A0005367BD /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D8986221BD1A0005367BD /* MainCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		8B9D8980221990F4005367BD /* UserDefaultsStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorageTests.swift; sourceTree = "<group>"; };
 		8B9D8982221BCE01005367BD /* UserDefaultsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorage.swift; sourceTree = "<group>"; };
 		8B9D8984221BCE7E005367BD /* KeyValueStorageError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueStorageError.swift; sourceTree = "<group>"; };
+		8B9D8986221BD1A0005367BD /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				8B9D896C22199009005367BD /* AuthCoordinator.swift */,
+				8B9D8988221BD1BB005367BD /* Modules */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -213,6 +216,8 @@
 		8B9D896B22198FB7005367BD /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				8B9D8986221BD1A0005367BD /* MainCoordinator.swift */,
+				8B9D8989221BD1C4005367BD /* Modules */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -242,6 +247,20 @@
 				8B9D8980221990F4005367BD /* UserDefaultsStorageTests.swift */,
 			);
 			path = "Core components tests";
+			sourceTree = "<group>";
+		};
+		8B9D8988221BD1BB005367BD /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		8B9D8989221BD1C4005367BD /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,6 +395,7 @@
 				8B9D8969221952B9005367BD /* ColorScheme.swift in Sources */,
 				8B9D895C22194BFD005367BD /* Presentable.swift in Sources */,
 				8B9D8983221BCE01005367BD /* UserDefaultsStorage.swift in Sources */,
+				8B9D8987221BD1A0005367BD /* MainCoordinator.swift in Sources */,
 				8B9D895822194BBE005367BD /* Coordinator.swift in Sources */,
 				8B9D897022199099005367BD /* KeyValueStorage.swift in Sources */,
 				8B9D896222194CE3005367BD /* BaseRouter.swift in Sources */,
