@@ -9,7 +9,7 @@ Best way to find iOS developer job 👻
 ### 👍 Goals:
 1. Create the most greatest portfolio project of all time!
 2. Try to use the most interesting architectures, latest technologies ant etc.
-3. Write clean and testable code!
+3. Write clean and testable code. TDD everything!
 4. Make all layout in code.
 
 ### 🚦Roadmap:
