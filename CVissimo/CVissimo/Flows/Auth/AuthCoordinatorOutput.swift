@@ -1,5 +1,5 @@
 //
-//  MainCoordinator.swift
+//  AuthCoordinatorOutput.swift
 //  CVissimo
 //
 //  Created by Pavel Shatalov on 19/02/2019.
@@ -8,6 +8,8 @@
 
 import Foundation
 
-final class MainCoordinator: BaseCoordinator {
+protocol AuthCoordinatorOutput: class {
+
+  func flowFinished(_ coordinator: Coordinator)
 
 }

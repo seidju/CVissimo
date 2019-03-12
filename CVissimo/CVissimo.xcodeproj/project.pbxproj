@@ -26,6 +26,19 @@
 		8B9D8983221BCE01005367BD /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D8982221BCE01005367BD /* UserDefaultsStorage.swift */; };
 		8B9D8985221BCE7E005367BD /* KeyValueStorageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D8984221BCE7E005367BD /* KeyValueStorageError.swift */; };
 		8B9D8987221BD1A0005367BD /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D8986221BD1A0005367BD /* MainCoordinator.swift */; };
+		8B9D8993221BE115005367BD /* SignInViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D898B221BE115005367BD /* SignInViewInput.swift */; };
+		8B9D8994221BE115005367BD /* SignInInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D898C221BE115005367BD /* SignInInteractorOutput.swift */; };
+		8B9D8995221BE115005367BD /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D898D221BE115005367BD /* SignInPresenter.swift */; };
+		8B9D8996221BE115005367BD /* SignInInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D898E221BE115005367BD /* SignInInteractorInput.swift */; };
+		8B9D8997221BE115005367BD /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D898F221BE115005367BD /* SignInViewController.swift */; };
+		8B9D8998221BE115005367BD /* SignInAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D8990221BE115005367BD /* SignInAssembly.swift */; };
+		8B9D8999221BE115005367BD /* SignInInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D8991221BE115005367BD /* SignInInteractor.swift */; };
+		8B9D899A221BE115005367BD /* SignInViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D8992221BE115005367BD /* SignInViewOutput.swift */; };
+		8B9D89A1221BE153005367BD /* SignInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D89A0221BE153005367BD /* SignInRouter.swift */; };
+		8B9D89A4221BE23E005367BD /* CoreFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D89A3221BE23E005367BD /* CoreFactory.swift */; };
+		8B9D89A6221BE41E005367BD /* AuthCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D89A5221BE41E005367BD /* AuthCoordinatorOutput.swift */; };
+		8B9D89A9221BED60005367BD /* Rest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D89A8221BED60005367BD /* Rest.swift */; };
+		8B9D89AB221BED73005367BD /* RestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D89AA221BED73005367BD /* RestTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +75,19 @@
 		8B9D8982221BCE01005367BD /* UserDefaultsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorage.swift; sourceTree = "<group>"; };
 		8B9D8984221BCE7E005367BD /* KeyValueStorageError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueStorageError.swift; sourceTree = "<group>"; };
 		8B9D8986221BD1A0005367BD /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		8B9D898B221BE115005367BD /* SignInViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewInput.swift; sourceTree = "<group>"; };
+		8B9D898C221BE115005367BD /* SignInInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInInteractorOutput.swift; sourceTree = "<group>"; };
+		8B9D898D221BE115005367BD /* SignInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
+		8B9D898E221BE115005367BD /* SignInInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInInteractorInput.swift; sourceTree = "<group>"; };
+		8B9D898F221BE115005367BD /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		8B9D8990221BE115005367BD /* SignInAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInAssembly.swift; sourceTree = "<group>"; };
+		8B9D8991221BE115005367BD /* SignInInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInInteractor.swift; sourceTree = "<group>"; };
+		8B9D8992221BE115005367BD /* SignInViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewOutput.swift; sourceTree = "<group>"; };
+		8B9D89A0221BE153005367BD /* SignInRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRouter.swift; sourceTree = "<group>"; };
+		8B9D89A3221BE23E005367BD /* CoreFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreFactory.swift; sourceTree = "<group>"; };
+		8B9D89A5221BE41E005367BD /* AuthCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinatorOutput.swift; sourceTree = "<group>"; };
+		8B9D89A8221BED60005367BD /* Rest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rest.swift; sourceTree = "<group>"; };
+		8B9D89AA221BED73005367BD /* RestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +131,7 @@
 			children = (
 				8B9D894A221945A3005367BD /* Application */,
 				8B9D895222194B6E005367BD /* Routing */,
+				8B9D89A2221BE22F005367BD /* Factory */,
 				8B9D894D22194AB3005367BD /* Flows */,
 				8B9D895122194B0C005367BD /* Core components */,
 				8B9D895022194B07005367BD /* Services */,
@@ -169,6 +196,7 @@
 		8B9D895122194B0C005367BD /* Core components */ = {
 			isa = PBXGroup;
 			children = (
+				8B9D89A7221BED0E005367BD /* Rest  */,
 				8B9D896E2219906F005367BD /* KeyValue storage */,
 			);
 			path = "Core components";
@@ -208,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				8B9D896C22199009005367BD /* AuthCoordinator.swift */,
+				8B9D89A5221BE41E005367BD /* AuthCoordinatorOutput.swift */,
 				8B9D8988221BD1BB005367BD /* Modules */,
 			);
 			path = Auth;
@@ -245,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				8B9D8980221990F4005367BD /* UserDefaultsStorageTests.swift */,
+				8B9D89AA221BED73005367BD /* RestTests.swift */,
 			);
 			path = "Core components tests";
 			sourceTree = "<group>";
@@ -252,6 +282,7 @@
 		8B9D8988221BD1BB005367BD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				8B9D898A221BE0EA005367BD /* Sign In */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -261,6 +292,78 @@
 			children = (
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		8B9D898A221BE0EA005367BD /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				8B9D899E221BE141005367BD /* Assembly */,
+				8B9D899F221BE14A005367BD /* Router */,
+				8B9D899B221BE12C005367BD /* View */,
+				8B9D899C221BE133005367BD /* Interactor */,
+				8B9D899D221BE13A005367BD /* Presenter */,
+			);
+			path = "Sign In";
+			sourceTree = "<group>";
+		};
+		8B9D899B221BE12C005367BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B9D898F221BE115005367BD /* SignInViewController.swift */,
+				8B9D898B221BE115005367BD /* SignInViewInput.swift */,
+				8B9D8992221BE115005367BD /* SignInViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B9D899C221BE133005367BD /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				8B9D898C221BE115005367BD /* SignInInteractorOutput.swift */,
+				8B9D898E221BE115005367BD /* SignInInteractorInput.swift */,
+				8B9D8991221BE115005367BD /* SignInInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		8B9D899D221BE13A005367BD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8B9D898D221BE115005367BD /* SignInPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8B9D899E221BE141005367BD /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				8B9D8990221BE115005367BD /* SignInAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		8B9D899F221BE14A005367BD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				8B9D89A0221BE153005367BD /* SignInRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		8B9D89A2221BE22F005367BD /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				8B9D89A3221BE23E005367BD /* CoreFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		8B9D89A7221BED0E005367BD /* Rest  */ = {
+			isa = PBXGroup;
+			children = (
+				8B9D89A8221BED60005367BD /* Rest.swift */,
+			);
+			path = "Rest ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,19 +492,31 @@
 				8B9D895A22194BDA005367BD /* DeepLinkOption.swift in Sources */,
 				8B9D89392219458D005367BD /* AppDelegate.swift in Sources */,
 				8B9D895622194B9B005367BD /* BaseCoordinator.swift in Sources */,
+				8B9D89A9221BED60005367BD /* Rest.swift in Sources */,
+				8B9D8994221BE115005367BD /* SignInInteractorOutput.swift in Sources */,
 				8B9D896022194CCB005367BD /* Router.swift in Sources */,
+				8B9D8999221BE115005367BD /* SignInInteractor.swift in Sources */,
 				8B9D895E22194C16005367BD /* BaseView.swift in Sources */,
+				8B9D8995221BE115005367BD /* SignInPresenter.swift in Sources */,
 				8B9D896422194D66005367BD /* ApplicationCoordinator.swift in Sources */,
 				8B9D8969221952B9005367BD /* ColorScheme.swift in Sources */,
 				8B9D895C22194BFD005367BD /* Presentable.swift in Sources */,
+				8B9D89A1221BE153005367BD /* SignInRouter.swift in Sources */,
 				8B9D8983221BCE01005367BD /* UserDefaultsStorage.swift in Sources */,
 				8B9D8987221BD1A0005367BD /* MainCoordinator.swift in Sources */,
+				8B9D899A221BE115005367BD /* SignInViewOutput.swift in Sources */,
 				8B9D895822194BBE005367BD /* Coordinator.swift in Sources */,
 				8B9D897022199099005367BD /* KeyValueStorage.swift in Sources */,
+				8B9D8997221BE115005367BD /* SignInViewController.swift in Sources */,
 				8B9D896222194CE3005367BD /* BaseRouter.swift in Sources */,
 				8B9D896D22199009005367BD /* AuthCoordinator.swift in Sources */,
 				8B9D8985221BCE7E005367BD /* KeyValueStorageError.swift in Sources */,
+				8B9D89A4221BE23E005367BD /* CoreFactory.swift in Sources */,
+				8B9D89A6221BE41E005367BD /* AuthCoordinatorOutput.swift in Sources */,
+				8B9D8996221BE115005367BD /* SignInInteractorInput.swift in Sources */,
+				8B9D8993221BE115005367BD /* SignInViewInput.swift in Sources */,
 				8B9D8967221951E5005367BD /* UIColorExtensions.swift in Sources */,
+				8B9D8998221BE115005367BD /* SignInAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +525,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B9D8981221990F4005367BD /* UserDefaultsStorageTests.swift in Sources */,
+				8B9D89AB221BED73005367BD /* RestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

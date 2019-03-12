@@ -1,5 +1,5 @@
 //
-//  MainCoordinator.swift
+//  Rest.swift
 //  CVissimo
 //
 //  Created by Pavel Shatalov on 19/02/2019.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-final class MainCoordinator: BaseCoordinator {
-
+struct Rest {
+  
 }

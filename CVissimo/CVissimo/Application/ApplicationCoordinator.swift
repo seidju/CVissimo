@@ -16,4 +16,26 @@ final class ApplicationCoordinator: BaseCoordinator {
     self.router = router
   }
 
+  override func start() {
+    runAuthFlow()
+  }
+
+  private func runAuthFlow() {
+    let coordinator = AuthCoordinator(router: router, output: self)
+    addDependency(coordinator)
+    coordinator.start()
+  }
+
+  private func runMainFlow() {
+
+  }
+
+}
+
+extension ApplicationCoordinator: AuthCoordinatorOutput {
+
+  func flowFinished(_ coordinator: Coordinator) {
+    removeDependency(coordinator)
+  }
+
 }

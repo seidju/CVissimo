@@ -10,4 +10,24 @@ import Foundation
 
 final class AuthCoordinator: BaseCoordinator {
 
+  private let router: Router
+  private weak var output: AuthCoordinatorOutput?
+
+  init(router: Router, output: AuthCoordinatorOutput) {
+    self.router = router
+    self.output = output
+  }
+
+  override func start() {
+    showSignInModule()
+  }
+
+  private func showSignInModule() {
+    let module = SignInAssembly.createSignInModule(router: self)
+    router.setRootModule(module, animated: false)
+  }
+}
+
+extension AuthCoordinator: SignInRouter {
+
 }
