@@ -13,14 +13,13 @@ protocol ChatInputBarDelegate: class {
 }
 
 final class ChatInputBar: UIView {
-  @IBOutlet private weak var sendButton: UIButton!
-  @IBOutlet private weak var textView: PlaceholderTextView!
   weak var delegate: ChatInputBarDelegate?
 
   static func getView() -> ChatInputBar? {
     let nib = ChatInputBar.nib()
     if let view = nib?.instantiate(withOwner: self, options: nil).first as?
       ChatInputBar {
+      view.sendButton.isEnabled = false
       view.textView.textColor = .black
       view.textView.placeholder = "Enter message..."
       view.textView.delegate = view.self
@@ -29,6 +28,9 @@ final class ChatInputBar: UIView {
       return nil
     }
   }
+  
+  @IBOutlet private weak var sendButton: UIButton!
+  @IBOutlet private weak var textView: PlaceholderTextView!
 
   override var intrinsicContentSize: CGSize {
     textView.isScrollEnabled = false
@@ -45,16 +47,24 @@ final class ChatInputBar: UIView {
   @IBAction private func sendMessagePressed(_ sender: Any) {
     delegate?.didPressSendMessageWith(textView.text)
     textView.text = ""
+    updateLayout()
+    evaluateInputState()
   }
-  
+
+  private func evaluateInputState() {
+    sendButton.isEnabled = !textView.text.isEmpty
+  }
+
+  private func updateLayout() {
+    invalidateIntrinsicContentSize()
+    updateConstraints()
+  }
 }
 
 extension ChatInputBar: UITextViewDelegate {
-
   func textViewDidChange(_ textView: UITextView) {
-    invalidateIntrinsicContentSize()
-    updateConstraints()
-    sendButton.isEnabled = !textView.text.isEmpty
+    updateLayout()
+    evaluateInputState()
   }
 }
 

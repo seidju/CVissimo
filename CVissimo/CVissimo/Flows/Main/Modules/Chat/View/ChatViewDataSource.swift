@@ -14,7 +14,7 @@ private struct DiffAwareItem: DiffAware {
   init(chatItem: ChatBaseMessage) {
     diffId = Int(chatItem.messageId)
   }
-  
+
   static func compareContent(_ a: DiffAwareItem, _ b: DiffAwareItem) -> Bool {
     return true
   }
@@ -38,20 +38,7 @@ class ChatViewDataSource: NSObject {
     collectionNode.view.reload(changes: changes, updateData: { [weak self] in
       self?.messages = messages
     })
-//    collectionNode.reloadData()
   }
-
-  func insert(messages: [ChatBaseMessage], position: InsertPosition) {
-    switch position {
-    case .bottom:
-      self.messages.append(contentsOf: messages)
-
-    case .top:
-      self.messages.insert(contentsOf: messages, at: 0)
-    }
-    collectionNode.reloadData()
-  }
-
 }
 
 extension ChatViewDataSource: ASCollectionDelegate, ASCollectionDataSource {
@@ -73,6 +60,5 @@ extension ChatViewDataSource: ASCollectionDelegate, ASCollectionDataSource {
 
   func scrollViewDidScroll(_ scrollView: UIScrollView) {
     print(scrollView.contentOffset)
-
   }
 }

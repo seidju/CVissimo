@@ -30,7 +30,7 @@ extension ChatPresenter: ChatViewOutput {
 
   func viewDidLoad() {
     var messages = [ChatBaseMessage]()
-    for i in 0...10 {
+    for i in 0...1000 {
       let message = ChatTextMessage(messageId: UInt64(i), text: texts.randomElement() ?? "", senderId: "me")
       messages.append(message)
     }
@@ -50,4 +50,3 @@ let texts: [String] = ["Hi! I'm new chat layout",
                        "When using Automatic Subnode Management with the ASOverlayLayoutSpec, the nodes may sometimes appear in the wrong order. This is a known",
                        "The background spec’s size is calculated from the child’s size. In the diagram below, the child is the blue layer. The child’s size is",
                        "The background spec’s size is calculated from the child’s size. In the diagram below, the child is the blue layer. The child’s size is, hen using Automatic Subnode Management with the ASOverlayLayoutSpec, the nodes may sometimes appear in the wrong order. This is a known hen using Automatic Subnode Management with the ASOverlayLayoutSpec, the nodes may sometimes appear in the wrong order. This is a knownhen using Automatic Subnode Management with the ASOverlayLayoutSpec, the nodes may sometimes appear in the wrong order. This is a known"]
-
