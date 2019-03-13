@@ -8,6 +8,14 @@
 
 import Foundation
 
+enum MessageFetchingDirection {
+  case forward
+  case backward
+}
+
 protocol ChatInteractorInput {
+
+  func getInitialMessages(count: Int)
+  func getMessages(from messageId: UInt64, count: Int, direction: MessageFetchingDirection)
 
 }

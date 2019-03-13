@@ -17,14 +17,25 @@ final class MainCoordinator: BaseCoordinator {
   }
 
   override func start() {
-    showSignInModule()
+    showPortfolioModule()
   }
 
-  private func showSignInModule() {
+  private func showChatModule() {
     let module = ChatAssembly.createChatModule(router: self)
+    router.push(module, hideBar: false)
+  }
+
+  private func showPortfolioModule() {
+    let module = PortfolioAssembly.createPortfolioModule(router: self)
     router.setRootModule(module, animated: false)
   }
 
+}
+
+extension MainCoordinator: PortfolioRouter {
+  func showChat() {
+    showChatModule()
+  }
 }
 
 extension MainCoordinator: ChatRouter {

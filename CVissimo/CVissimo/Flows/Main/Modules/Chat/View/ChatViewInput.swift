@@ -11,5 +11,5 @@ import Foundation
 protocol ChatViewInput: class {
 
   func update(messages: [ChatBaseMessage])
-  
+
 }

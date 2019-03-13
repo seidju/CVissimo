@@ -28,7 +28,7 @@ final class ChatInputBar: UIView {
       return nil
     }
   }
-  
+
   @IBOutlet private weak var sendButton: UIButton!
   @IBOutlet private weak var textView: PlaceholderTextView!
 

@@ -13,4 +13,6 @@ protocol ChatViewOutput {
   func viewDidLoad()
   func didPressSendTextButton(_ text: String)
 
+  func didScrollCloseToTop()
+  func didScrollCloseToBottom()
 }

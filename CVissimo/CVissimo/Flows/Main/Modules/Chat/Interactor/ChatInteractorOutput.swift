@@ -10,4 +10,7 @@ import Foundation
 
 protocol ChatInteractorOutput: class {
 
+  func didObtainInitialMessages(_ messages: [ChatBaseMessage])
+  func didObtainMessages(_ messages: [ChatBaseMessage], isBackward: Bool, hasMore: Bool)
+
 }

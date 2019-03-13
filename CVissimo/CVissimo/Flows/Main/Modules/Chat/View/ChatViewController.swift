@@ -22,6 +22,7 @@ class ChatViewController: ASViewController<ASCollectionNode> {
 
   private lazy var dataSource: ChatViewDataSource = {
     let dataSource = ChatViewDataSource(collectionNode: collectionNode)
+    dataSource.delegate = self
     return dataSource
   }()
 
@@ -88,6 +89,12 @@ extension ChatViewController: ChatInputBarDelegate {
   }
 }
 
-extension ChatViewController: UIScrollViewDelegate {
-
+extension ChatViewController: ChatViewDataSourceDelegate {
+  func didScrollCloseToBottom() {
+    output?.didScrollCloseToBottom()
+  }
+  
+  func didScrollCloseToTop() {
+    output?.didScrollCloseToTop()
+  }
 }
