@@ -14,5 +14,5 @@ Best way to find iOS developer job 👻
 
 ### 🚦Roadmap:
 #### 🚲 Version 0.1.0 (02-2019):
-- [ ] Create base project structure. Use Carthage as package manager for external dependecies.
+- [x] Create base project structure. Use Carthage as package manager for external dependecies.
 
