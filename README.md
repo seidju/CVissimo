@@ -10,9 +10,9 @@ Best way to find iOS developer job 👻
 1. Create the most greatest portfolio project of all time!
 2. Try to use the most interesting architectures, latest technologies ant etc.
 3. Write clean and testable code. TDD everything!
-4. Make all layout in code.
+4. ...
 
 ### 🚦Roadmap:
 #### 🚲 Version 0.1.0 (02-2019):
-- [ ] Create base project structure. Use Carthage as package manager for external dependecies.
-
+- [x] Create base project structure. Use Carthage as package manager for external dependecies.
+- [ ] Start from creating some basic chat sreen. Implement AsyncDisplayKit for fast rendering in 60 fps. Loot at Chatto for inspiration
