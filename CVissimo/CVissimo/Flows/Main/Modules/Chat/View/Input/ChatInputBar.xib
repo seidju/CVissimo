@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Lv7-Cr-vVG" customClass="ChatInputBar" customModule="CVissimo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Z2-lr-zbH" userLabel="InputView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" keyboardDismissMode="interactive" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="TyO-wg-QFO" customClass="PlaceholderTextView" customModule="CVissimo" customModuleProvider="target">
+                            <rect key="frame" x="16" y="8" width="303" height="39"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                            <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
+                        </textView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xor-Wg-PrJ">
+                            <rect key="frame" x="327" y="15" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="32" id="Qp1-MK-UR8"/>
+                                <constraint firstAttribute="height" constant="32" id="bLH-ni-ZZ7"/>
+                            </constraints>
+                            <state key="normal" image="chatInputSend"/>
+                            <connections>
+                                <action selector="sendMessagePressed:" destination="Lv7-Cr-vVG" eventType="touchUpInside" id="JPU-0n-vDD"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="TyO-wg-QFO" firstAttribute="leading" secondItem="0Z2-lr-zbH" secondAttribute="leading" constant="16" id="18i-6s-UjR"/>
+                        <constraint firstAttribute="trailing" secondItem="xor-Wg-PrJ" secondAttribute="trailing" constant="16" id="3PJ-El-fcy"/>
+                        <constraint firstItem="xor-Wg-PrJ" firstAttribute="leading" secondItem="TyO-wg-QFO" secondAttribute="trailing" constant="8" id="HPV-sj-e9n"/>
+                        <constraint firstItem="m2R-Fu-Jwe" firstAttribute="bottom" secondItem="TyO-wg-QFO" secondAttribute="bottom" constant="8" id="cvC-BC-BOm"/>
+                        <constraint firstItem="m2R-Fu-Jwe" firstAttribute="bottom" secondItem="xor-Wg-PrJ" secondAttribute="bottom" constant="8" id="gQp-Sa-L1H"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="m2R-Fu-Jwe"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="0Z2-lr-zbH" secondAttribute="bottom" id="1yN-bV-Q1M"/>
+                <constraint firstItem="0Z2-lr-zbH" firstAttribute="top" secondItem="Lv7-Cr-vVG" secondAttribute="top" id="UUv-kz-UD4"/>
+                <constraint firstItem="TyO-wg-QFO" firstAttribute="top" secondItem="Lv7-Cr-vVG" secondAttribute="top" constant="8" id="lGy-Rc-1lO"/>
+                <constraint firstAttribute="trailing" secondItem="0Z2-lr-zbH" secondAttribute="trailing" id="vmO-QN-Vdc"/>
+                <constraint firstItem="0Z2-lr-zbH" firstAttribute="leading" secondItem="Lv7-Cr-vVG" secondAttribute="leading" id="wzx-jM-L9Q"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="sendButton" destination="xor-Wg-PrJ" id="zh3-e2-qYc"/>
+                <outlet property="textView" destination="TyO-wg-QFO" id="vPI-Xf-abQ"/>
+            </connections>
+            <point key="canvasLocation" x="32.799999999999997" y="102.09895052473765"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chatInputSend" width="62" height="62"/>
+    </resources>
+</document>

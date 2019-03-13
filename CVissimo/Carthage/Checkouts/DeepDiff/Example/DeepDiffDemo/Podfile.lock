@@ -1,0 +1,23 @@
+PODS:
+  - Anchors (2.4.0)
+  - DeepDiff (2.0.0)
+
+DEPENDENCIES:
+  - Anchors
+  - DeepDiff (from `../../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Anchors
+
+EXTERNAL SOURCES:
+  DeepDiff:
+    :path: "../../"
+
+SPEC CHECKSUMS:
+  Anchors: 75614cac462e063b395386e31eb593a856d831a8
+  DeepDiff: a3e7589c6b0b26fd042254a5aa7c4e1102151bdb
+
+PODFILE CHECKSUM: 8185e898622e6e2d8f7c1a10380fbcd698300e22
+
+COCOAPODS: 1.6.1

@@ -9,16 +9,16 @@
 import XCTest
 @testable import CVissimo
 class RestTests: XCTestCase {
-  
+
   private let rest = Rest()
-  
+
   override func setUp() {
   }
-  
+
   override func tearDown() {
   }
-  
+
   func testGetRequest() {
   }
-  
+
 }

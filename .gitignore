@@ -1,0 +1,34 @@
+# Project-specific
+Carthage/*
+
+# Mac OS X
+.DS_Store
+
+# Xcode
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+*.xccheckout
+project.xcworkspace/
+xcuserdata/
+
+Build/
+
+# Generated files
+*.o
+*.pyc
+*.hi
+*.generated.swift
+
+#Python modules
+MANIFEST
+dist/
+build/
+Build/
+
+# Backup files
+*~.nib
+\#*#
+.#*
