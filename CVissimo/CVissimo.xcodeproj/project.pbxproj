@@ -36,11 +36,18 @@
 		8B9D89A1221BE153005367BD /* SignInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D89A0221BE153005367BD /* SignInRouter.swift */; };
 		8B9D89A4221BE23E005367BD /* CoreFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D89A3221BE23E005367BD /* CoreFactory.swift */; };
 		8B9D89A6221BE41E005367BD /* AuthCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D89A5221BE41E005367BD /* AuthCoordinatorOutput.swift */; };
-		8B9D89A9221BED60005367BD /* Rest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D89A8221BED60005367BD /* Rest.swift */; };
-		8B9D89AB221BED73005367BD /* RestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D89AA221BED73005367BD /* RestTests.swift */; };
 		8BA14D3422686352002F4BA4 /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA14D3322686352002F4BA4 /* UserDefaultsStorage.swift */; };
 		8BA14D3622686364002F4BA4 /* FileStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA14D3522686364002F4BA4 /* FileStorage.swift */; };
 		8BA14D392268639A002F4BA4 /* Cancelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA14D382268639A002F4BA4 /* Cancelable.swift */; };
+		8BA14D3B22686458002F4BA4 /* RestServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA14D3A22686458002F4BA4 /* RestServiceError.swift */; };
+		8BA14D3D2268647B002F4BA4 /* RestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA14D3C2268647B002F4BA4 /* RestService.swift */; };
+		8BA14D3F226864AA002F4BA4 /* RestServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA14D3E226864AA002F4BA4 /* RestServiceImp.swift */; };
+		8BA14D4122686513002F4BA4 /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA14D4022686513002F4BA4 /* URLRequestBuilder.swift */; };
+		8BA14D462268660B002F4BA4 /* URLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA14D452268660B002F4BA4 /* URLSessionMock.swift */; };
+		8BA14D48226866C3002F4BA4 /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA14D47226866C3002F4BA4 /* ServiceFactory.swift */; };
+		8BA14D4C22686757002F4BA4 /* RestServiceParsingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA14D4B22686757002F4BA4 /* RestServiceParsingTests.swift */; };
+		8BA14D4E226867FC002F4BA4 /* RestServiceRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA14D4D226867FC002F4BA4 /* RestServiceRequestTests.swift */; };
+		8BA14D51226874D3002F4BA4 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA14D50226874D3002F4BA4 /* UserResponse.swift */; };
 		8BBD92D322375C9300D480E6 /* PINRemoteImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBD92D122375B5100D480E6 /* PINRemoteImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8BBD92D422375C9300D480E6 /* AsyncDisplayKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBD92CC22375B3B00D480E6 /* AsyncDisplayKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8BBD92D522375C9300D480E6 /* PINCache.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBD92CB22375B3B00D480E6 /* PINCache.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -142,11 +149,18 @@
 		8B9D89A0221BE153005367BD /* SignInRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRouter.swift; sourceTree = "<group>"; };
 		8B9D89A3221BE23E005367BD /* CoreFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreFactory.swift; sourceTree = "<group>"; };
 		8B9D89A5221BE41E005367BD /* AuthCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinatorOutput.swift; sourceTree = "<group>"; };
-		8B9D89A8221BED60005367BD /* Rest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rest.swift; sourceTree = "<group>"; };
-		8B9D89AA221BED73005367BD /* RestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestTests.swift; sourceTree = "<group>"; };
 		8BA14D3322686352002F4BA4 /* UserDefaultsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorage.swift; sourceTree = "<group>"; };
 		8BA14D3522686364002F4BA4 /* FileStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileStorage.swift; sourceTree = "<group>"; };
 		8BA14D382268639A002F4BA4 /* Cancelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancelable.swift; sourceTree = "<group>"; };
+		8BA14D3A22686458002F4BA4 /* RestServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestServiceError.swift; sourceTree = "<group>"; };
+		8BA14D3C2268647B002F4BA4 /* RestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestService.swift; sourceTree = "<group>"; };
+		8BA14D3E226864AA002F4BA4 /* RestServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestServiceImp.swift; sourceTree = "<group>"; };
+		8BA14D4022686513002F4BA4 /* URLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
+		8BA14D452268660B002F4BA4 /* URLSessionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionMock.swift; sourceTree = "<group>"; };
+		8BA14D47226866C3002F4BA4 /* ServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactory.swift; sourceTree = "<group>"; };
+		8BA14D4B22686757002F4BA4 /* RestServiceParsingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestServiceParsingTests.swift; sourceTree = "<group>"; };
+		8BA14D4D226867FC002F4BA4 /* RestServiceRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestServiceRequestTests.swift; sourceTree = "<group>"; };
+		8BA14D50226874D3002F4BA4 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
 		8BBD92CA22375B3B00D480E6 /* PINOperation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINOperation.framework; path = Carthage/Build/iOS/PINOperation.framework; sourceTree = "<group>"; };
 		8BBD92CB22375B3B00D480E6 /* PINCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINCache.framework; path = Carthage/Build/iOS/PINCache.framework; sourceTree = "<group>"; };
 		8BBD92CC22375B3B00D480E6 /* AsyncDisplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AsyncDisplayKit.framework; path = Carthage/Build/iOS/AsyncDisplayKit.framework; sourceTree = "<group>"; };
@@ -321,7 +335,6 @@
 			isa = PBXGroup;
 			children = (
 				8B0D0CBF224E59E200871546 /* Key value storage */,
-				8B9D89A7221BED0E005367BD /* Rest  */,
 			);
 			path = "Core components";
 			sourceTree = "<group>";
@@ -378,6 +391,8 @@
 		8B9D8976221990CD005367BD /* CVissimoTests */ = {
 			isa = PBXGroup;
 			children = (
+				8BA14D44226865FE002F4BA4 /* Mocks */,
+				8BA14D42226865E4002F4BA4 /* Services tests */,
 				8B9D897F221990DA005367BD /* Core components tests */,
 				8B9D8979221990CD005367BD /* Info.plist */,
 			);
@@ -388,7 +403,6 @@
 			isa = PBXGroup;
 			children = (
 				8B9D8980221990F4005367BD /* UserDefaultsStorageTests.swift */,
-				8B9D89AA221BED73005367BD /* RestTests.swift */,
 			);
 			path = "Core components tests";
 			sourceTree = "<group>";
@@ -470,24 +484,55 @@
 			isa = PBXGroup;
 			children = (
 				8B9D89A3221BE23E005367BD /* CoreFactory.swift */,
+				8BA14D47226866C3002F4BA4 /* ServiceFactory.swift */,
 			);
 			path = Factory;
-			sourceTree = "<group>";
-		};
-		8B9D89A7221BED0E005367BD /* Rest  */ = {
-			isa = PBXGroup;
-			children = (
-				8B9D89A8221BED60005367BD /* Rest.swift */,
-			);
-			path = "Rest ";
 			sourceTree = "<group>";
 		};
 		8BA14D372268638A002F4BA4 /* Rest service */ = {
 			isa = PBXGroup;
 			children = (
 				8BA14D382268639A002F4BA4 /* Cancelable.swift */,
+				8BA14D3A22686458002F4BA4 /* RestServiceError.swift */,
+				8BA14D3C2268647B002F4BA4 /* RestService.swift */,
+				8BA14D3E226864AA002F4BA4 /* RestServiceImp.swift */,
+				8BA14D4022686513002F4BA4 /* URLRequestBuilder.swift */,
+				8BA14D4F226874CB002F4BA4 /* Responses */,
 			);
 			path = "Rest service";
+			sourceTree = "<group>";
+		};
+		8BA14D42226865E4002F4BA4 /* Services tests */ = {
+			isa = PBXGroup;
+			children = (
+				8BA14D43226865EF002F4BA4 /* Rest service tests */,
+			);
+			path = "Services tests";
+			sourceTree = "<group>";
+		};
+		8BA14D43226865EF002F4BA4 /* Rest service tests */ = {
+			isa = PBXGroup;
+			children = (
+				8BA14D4B22686757002F4BA4 /* RestServiceParsingTests.swift */,
+				8BA14D4D226867FC002F4BA4 /* RestServiceRequestTests.swift */,
+			);
+			path = "Rest service tests";
+			sourceTree = "<group>";
+		};
+		8BA14D44226865FE002F4BA4 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				8BA14D452268660B002F4BA4 /* URLSessionMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		8BA14D4F226874CB002F4BA4 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				8BA14D50226874D3002F4BA4 /* UserResponse.swift */,
+			);
+			path = Responses;
 			sourceTree = "<group>";
 		};
 		8BBD92D722375FB100D480E6 /* Chat */ = {
@@ -822,7 +867,6 @@
 				8BA14D3622686364002F4BA4 /* FileStorage.swift in Sources */,
 				8BBD92E722375FCD00D480E6 /* ChatViewOutput.swift in Sources */,
 				8BBD932F22394CDA00D480E6 /* PortfolioInteractorInput.swift in Sources */,
-				8B9D89A9221BED60005367BD /* Rest.swift in Sources */,
 				8B9D8994221BE115005367BD /* SignInInteractorOutput.swift in Sources */,
 				8B9D896022194CCB005367BD /* Router.swift in Sources */,
 				8B9D8999221BE115005367BD /* SignInInteractor.swift in Sources */,
@@ -836,14 +880,18 @@
 				8B0D0CC4224E59E200871546 /* KeyValueStorageError.swift in Sources */,
 				8BBD92E222375FCD00D480E6 /* ChatPresenter.swift in Sources */,
 				8B9D895C22194BFD005367BD /* Presentable.swift in Sources */,
+				8BA14D4122686513002F4BA4 /* URLRequestBuilder.swift in Sources */,
 				8BBD92F62237716E00D480E6 /* ChatBaseMessage.swift in Sources */,
 				8BBD92E422375FCD00D480E6 /* ChatViewController.swift in Sources */,
 				8BBD933322394CDA00D480E6 /* PortfolioViewOutput.swift in Sources */,
+				8BA14D48226866C3002F4BA4 /* ServiceFactory.swift in Sources */,
 				8B9D89A1221BE153005367BD /* SignInRouter.swift in Sources */,
 				8BBD933222394CDA00D480E6 /* PortfolioInteractor.swift in Sources */,
 				8BBD92F32237700B00D480E6 /* ChatViewDataSource.swift in Sources */,
+				8BA14D3F226864AA002F4BA4 /* RestServiceImp.swift in Sources */,
 				8BBD93092237A9F400D480E6 /* InsertPosition.swift in Sources */,
 				8B9D8987221BD1A0005367BD /* MainCoordinator.swift in Sources */,
+				8BA14D3B22686458002F4BA4 /* RestServiceError.swift in Sources */,
 				8BBD92F8223771BD00D480E6 /* MessageType.swift in Sources */,
 				8B0D0CC3224E59E200871546 /* KeyValueStorage.swift in Sources */,
 				8BBD93032237882300D480E6 /* ChatTextMessageNode.swift in Sources */,
@@ -852,6 +900,7 @@
 				8BBD93072237A27100D480E6 /* ChatBouncyLayout.swift in Sources */,
 				8BBD93162237BCF100D480E6 /* PlaceholderTextView.swift in Sources */,
 				8BBD933A22394D1F00D480E6 /* PortfolioRouter.swift in Sources */,
+				8BA14D51226874D3002F4BA4 /* UserResponse.swift in Sources */,
 				8BBD92FE223772AD00D480E6 /* ChatBaseMessageNode.swift in Sources */,
 				8B9D899A221BE115005367BD /* SignInViewOutput.swift in Sources */,
 				8BBD92E022375FCD00D480E6 /* ChatViewInput.swift in Sources */,
@@ -875,6 +924,7 @@
 				8B9D8967221951E5005367BD /* UIColorExtensions.swift in Sources */,
 				8B9D8998221BE115005367BD /* SignInAssembly.swift in Sources */,
 				8BBD92E322375FCD00D480E6 /* ChatInteractorInput.swift in Sources */,
+				8BA14D3D2268647B002F4BA4 /* RestService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -882,8 +932,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BA14D462268660B002F4BA4 /* URLSessionMock.swift in Sources */,
+				8BA14D4C22686757002F4BA4 /* RestServiceParsingTests.swift in Sources */,
 				8B9D8981221990F4005367BD /* UserDefaultsStorageTests.swift in Sources */,
-				8B9D89AB221BED73005367BD /* RestTests.swift in Sources */,
+				8BA14D4E226867FC002F4BA4 /* RestServiceRequestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

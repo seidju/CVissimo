@@ -11,30 +11,14 @@ import XCTest
 
 class UserDefaultsStorageTests: XCTestCase {
 
-  private let storage: KeyValueStorage = UserDefaultsStorage()
+  private let coreFactory = CoreFactory()
+  private var storage: KeyValueStorage!
 
   override func setUp() {
+    storage = coreFactory.makeUserDefaultsStorage()
   }
 
   override func tearDown() {
   }
 
-  func testSaveValueForKey() {
-    XCTAssertNoThrow(try storage.save(value: "some", for: "key"))
-  }
-
-  func testLoadValueForKey() {
-    let uniqueKey = UUID().uuidString.lowercased()
-    let someValue = "some"
-    try? storage.save(value: someValue, for: uniqueKey)
-    do {
-      if let object = try storage.loadValue(for: uniqueKey) as? String {
-        XCTAssertEqual(object, someValue)
-      } else {
-        XCTFail("Fetched object is invalid")
-      }
-    } catch {
-      XCTFail("Object for key not found")
-    }
-  }
 }

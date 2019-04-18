@@ -6,8 +6,6 @@
 //  Copyright © 2019 Pavel Shatalov. All rights reserved.
 //
 
-import DeepDiff
-
 protocol ChatBaseMessage {
 
   var messageId: UInt64 { get }

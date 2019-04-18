@@ -93,7 +93,7 @@ extension ChatViewController: ChatViewDataSourceDelegate {
   func didScrollCloseToBottom() {
     output?.didScrollCloseToBottom()
   }
-  
+
   func didScrollCloseToTop() {
     output?.didScrollCloseToTop()
   }

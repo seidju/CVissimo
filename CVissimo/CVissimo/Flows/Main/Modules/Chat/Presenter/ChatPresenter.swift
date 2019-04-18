@@ -15,7 +15,7 @@ class ChatPresenter {
     case backward
     case forward
   }
-  
+
   private weak var view: ChatViewInput?
   private weak var router: ChatRouter?
   private let interactor: ChatInteractorInput

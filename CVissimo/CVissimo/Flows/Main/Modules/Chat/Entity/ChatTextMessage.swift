@@ -9,11 +9,10 @@
 import DeepDiff
 
 struct ChatTextMessage: ChatBaseMessage {
-  
   let messageId: UInt64
   let senderId: String
   var type: MessageType
-  
+
   init(messageId: UInt64, text: String, senderId: String) {
     self.messageId = messageId
     self.type = MessageType.text(text)
@@ -25,7 +24,7 @@ extension ChatTextMessage: DiffAware {
   var diffId: Int {
     return Int(messageId)
   }
-  
+
   static func compareContent(_ a: ChatTextMessage, _ b: ChatTextMessage) -> Bool {
     return true
   }

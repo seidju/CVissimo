@@ -9,7 +9,7 @@
 import UIKit
 
 final class PlaceholderTextView: UITextView {
-  
+
   private let placeholderLabel = UILabel()
 
   private var currentInputTextViewHeight: CGFloat = 32
