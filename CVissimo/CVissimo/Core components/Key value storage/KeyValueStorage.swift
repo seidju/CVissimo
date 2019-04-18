@@ -10,7 +10,7 @@ import Foundation
 
 protocol KeyValueStorage {
 
-  func save(value: Any, for key: String) throws
-  func loadValue(for key: String) throws -> Any
+  func save<T: Encodable>(value: T, for key: String) throws
+  func loadValue<T: Decodable>(for key: String) throws -> T
 
 }

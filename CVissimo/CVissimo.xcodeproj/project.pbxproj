@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B0D0CC3224E59E200871546 /* KeyValueStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0D0CC0224E59E200871546 /* KeyValueStorage.swift */; };
+		8B0D0CC4224E59E200871546 /* KeyValueStorageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0D0CC1224E59E200871546 /* KeyValueStorageError.swift */; };
 		8B9D89392219458D005367BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D89382219458D005367BD /* AppDelegate.swift */; };
 		8B9D89402219458F005367BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B9D893F2219458F005367BD /* Assets.xcassets */; };
 		8B9D89432219458F005367BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B9D89412219458F005367BD /* LaunchScreen.storyboard */; };
@@ -21,10 +23,7 @@
 		8B9D8967221951E5005367BD /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D8966221951E5005367BD /* UIColorExtensions.swift */; };
 		8B9D8969221952B9005367BD /* ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D8968221952B9005367BD /* ColorScheme.swift */; };
 		8B9D896D22199009005367BD /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D896C22199009005367BD /* AuthCoordinator.swift */; };
-		8B9D897022199099005367BD /* KeyValueStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D896F22199099005367BD /* KeyValueStorage.swift */; };
 		8B9D8981221990F4005367BD /* UserDefaultsStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D8980221990F4005367BD /* UserDefaultsStorageTests.swift */; };
-		8B9D8983221BCE01005367BD /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D8982221BCE01005367BD /* UserDefaultsStorage.swift */; };
-		8B9D8985221BCE7E005367BD /* KeyValueStorageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D8984221BCE7E005367BD /* KeyValueStorageError.swift */; };
 		8B9D8987221BD1A0005367BD /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D8986221BD1A0005367BD /* MainCoordinator.swift */; };
 		8B9D8993221BE115005367BD /* SignInViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D898B221BE115005367BD /* SignInViewInput.swift */; };
 		8B9D8994221BE115005367BD /* SignInInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D898C221BE115005367BD /* SignInInteractorOutput.swift */; };
@@ -39,6 +38,9 @@
 		8B9D89A6221BE41E005367BD /* AuthCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D89A5221BE41E005367BD /* AuthCoordinatorOutput.swift */; };
 		8B9D89A9221BED60005367BD /* Rest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D89A8221BED60005367BD /* Rest.swift */; };
 		8B9D89AB221BED73005367BD /* RestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D89AA221BED73005367BD /* RestTests.swift */; };
+		8BA14D3422686352002F4BA4 /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA14D3322686352002F4BA4 /* UserDefaultsStorage.swift */; };
+		8BA14D3622686364002F4BA4 /* FileStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA14D3522686364002F4BA4 /* FileStorage.swift */; };
+		8BA14D392268639A002F4BA4 /* Cancelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA14D382268639A002F4BA4 /* Cancelable.swift */; };
 		8BBD92D322375C9300D480E6 /* PINRemoteImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBD92D122375B5100D480E6 /* PINRemoteImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8BBD92D422375C9300D480E6 /* AsyncDisplayKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBD92CC22375B3B00D480E6 /* AsyncDisplayKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8BBD92D522375C9300D480E6 /* PINCache.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBD92CB22375B3B00D480E6 /* PINCache.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -107,6 +109,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8B0D0CC0224E59E200871546 /* KeyValueStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyValueStorage.swift; sourceTree = "<group>"; };
+		8B0D0CC1224E59E200871546 /* KeyValueStorageError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyValueStorageError.swift; sourceTree = "<group>"; };
 		8B9D89352219458D005367BD /* CVissimo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CVissimo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B9D89382219458D005367BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B9D893F2219458F005367BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -123,12 +127,9 @@
 		8B9D8966221951E5005367BD /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		8B9D8968221952B9005367BD /* ColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorScheme.swift; sourceTree = "<group>"; };
 		8B9D896C22199009005367BD /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
-		8B9D896F22199099005367BD /* KeyValueStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueStorage.swift; sourceTree = "<group>"; };
 		8B9D8975221990CD005367BD /* CVissimoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CVissimoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B9D8979221990CD005367BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B9D8980221990F4005367BD /* UserDefaultsStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorageTests.swift; sourceTree = "<group>"; };
-		8B9D8982221BCE01005367BD /* UserDefaultsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorage.swift; sourceTree = "<group>"; };
-		8B9D8984221BCE7E005367BD /* KeyValueStorageError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueStorageError.swift; sourceTree = "<group>"; };
 		8B9D8986221BD1A0005367BD /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		8B9D898B221BE115005367BD /* SignInViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewInput.swift; sourceTree = "<group>"; };
 		8B9D898C221BE115005367BD /* SignInInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInInteractorOutput.swift; sourceTree = "<group>"; };
@@ -143,6 +144,9 @@
 		8B9D89A5221BE41E005367BD /* AuthCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinatorOutput.swift; sourceTree = "<group>"; };
 		8B9D89A8221BED60005367BD /* Rest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rest.swift; sourceTree = "<group>"; };
 		8B9D89AA221BED73005367BD /* RestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestTests.swift; sourceTree = "<group>"; };
+		8BA14D3322686352002F4BA4 /* UserDefaultsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorage.swift; sourceTree = "<group>"; };
+		8BA14D3522686364002F4BA4 /* FileStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileStorage.swift; sourceTree = "<group>"; };
+		8BA14D382268639A002F4BA4 /* Cancelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancelable.swift; sourceTree = "<group>"; };
 		8BBD92CA22375B3B00D480E6 /* PINOperation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINOperation.framework; path = Carthage/Build/iOS/PINOperation.framework; sourceTree = "<group>"; };
 		8BBD92CB22375B3B00D480E6 /* PINCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINCache.framework; path = Carthage/Build/iOS/PINCache.framework; sourceTree = "<group>"; };
 		8BBD92CC22375B3B00D480E6 /* AsyncDisplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AsyncDisplayKit.framework; path = Carthage/Build/iOS/AsyncDisplayKit.framework; sourceTree = "<group>"; };
@@ -200,6 +204,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B0D0CBF224E59E200871546 /* Key value storage */ = {
+			isa = PBXGroup;
+			children = (
+				8B0D0CC0224E59E200871546 /* KeyValueStorage.swift */,
+				8BA14D3322686352002F4BA4 /* UserDefaultsStorage.swift */,
+				8BA14D3522686364002F4BA4 /* FileStorage.swift */,
+				8B0D0CC1224E59E200871546 /* KeyValueStorageError.swift */,
+			);
+			path = "Key value storage";
+			sourceTree = "<group>";
+		};
 		8B2A8D1A223756B2004E2CDA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -297,6 +312,7 @@
 		8B9D895022194B07005367BD /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				8BA14D372268638A002F4BA4 /* Rest service */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -304,8 +320,8 @@
 		8B9D895122194B0C005367BD /* Core components */ = {
 			isa = PBXGroup;
 			children = (
+				8B0D0CBF224E59E200871546 /* Key value storage */,
 				8B9D89A7221BED0E005367BD /* Rest  */,
-				8B9D896E2219906F005367BD /* KeyValue storage */,
 			);
 			path = "Core components";
 			sourceTree = "<group>";
@@ -357,16 +373,6 @@
 				8B9D8989221BD1C4005367BD /* Modules */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		8B9D896E2219906F005367BD /* KeyValue storage */ = {
-			isa = PBXGroup;
-			children = (
-				8B9D896F22199099005367BD /* KeyValueStorage.swift */,
-				8B9D8984221BCE7E005367BD /* KeyValueStorageError.swift */,
-				8B9D8982221BCE01005367BD /* UserDefaultsStorage.swift */,
-			);
-			path = "KeyValue storage";
 			sourceTree = "<group>";
 		};
 		8B9D8976221990CD005367BD /* CVissimoTests */ = {
@@ -474,6 +480,14 @@
 				8B9D89A8221BED60005367BD /* Rest.swift */,
 			);
 			path = "Rest ";
+			sourceTree = "<group>";
+		};
+		8BA14D372268638A002F4BA4 /* Rest service */ = {
+			isa = PBXGroup;
+			children = (
+				8BA14D382268639A002F4BA4 /* Cancelable.swift */,
+			);
+			path = "Rest service";
 			sourceTree = "<group>";
 		};
 		8BBD92D722375FB100D480E6 /* Chat */ = {
@@ -805,6 +819,7 @@
 				8B9D895A22194BDA005367BD /* DeepLinkOption.swift in Sources */,
 				8B9D89392219458D005367BD /* AppDelegate.swift in Sources */,
 				8B9D895622194B9B005367BD /* BaseCoordinator.swift in Sources */,
+				8BA14D3622686364002F4BA4 /* FileStorage.swift in Sources */,
 				8BBD92E722375FCD00D480E6 /* ChatViewOutput.swift in Sources */,
 				8BBD932F22394CDA00D480E6 /* PortfolioInteractorInput.swift in Sources */,
 				8B9D89A9221BED60005367BD /* Rest.swift in Sources */,
@@ -813,10 +828,12 @@
 				8B9D8999221BE115005367BD /* SignInInteractor.swift in Sources */,
 				8B9D895E22194C16005367BD /* BaseView.swift in Sources */,
 				8BBD92EF2237606300D480E6 /* ChatRouter.swift in Sources */,
+				8BA14D392268639A002F4BA4 /* Cancelable.swift in Sources */,
 				8B9D8995221BE115005367BD /* SignInPresenter.swift in Sources */,
 				8B9D896422194D66005367BD /* ApplicationCoordinator.swift in Sources */,
 				8BBD933122394CDA00D480E6 /* PortfolioAssembly.swift in Sources */,
 				8B9D8969221952B9005367BD /* ColorScheme.swift in Sources */,
+				8B0D0CC4224E59E200871546 /* KeyValueStorageError.swift in Sources */,
 				8BBD92E222375FCD00D480E6 /* ChatPresenter.swift in Sources */,
 				8B9D895C22194BFD005367BD /* Presentable.swift in Sources */,
 				8BBD92F62237716E00D480E6 /* ChatBaseMessage.swift in Sources */,
@@ -826,9 +843,9 @@
 				8BBD933222394CDA00D480E6 /* PortfolioInteractor.swift in Sources */,
 				8BBD92F32237700B00D480E6 /* ChatViewDataSource.swift in Sources */,
 				8BBD93092237A9F400D480E6 /* InsertPosition.swift in Sources */,
-				8B9D8983221BCE01005367BD /* UserDefaultsStorage.swift in Sources */,
 				8B9D8987221BD1A0005367BD /* MainCoordinator.swift in Sources */,
 				8BBD92F8223771BD00D480E6 /* MessageType.swift in Sources */,
+				8B0D0CC3224E59E200871546 /* KeyValueStorage.swift in Sources */,
 				8BBD93032237882300D480E6 /* ChatTextMessageNode.swift in Sources */,
 				8BBD930522379DD200D480E6 /* UIImageExtensions.swift in Sources */,
 				8BBD930C2237B84F00D480E6 /* ChatInputBar.swift in Sources */,
@@ -840,12 +857,10 @@
 				8BBD92E022375FCD00D480E6 /* ChatViewInput.swift in Sources */,
 				8B9D895822194BBE005367BD /* Coordinator.swift in Sources */,
 				8BBD932E22394CDA00D480E6 /* PortfolioPresenter.swift in Sources */,
-				8B9D897022199099005367BD /* KeyValueStorage.swift in Sources */,
 				8B9D8997221BE115005367BD /* SignInViewController.swift in Sources */,
 				8BBD933022394CDA00D480E6 /* PortfolioViewController.swift in Sources */,
 				8B9D896222194CE3005367BD /* BaseRouter.swift in Sources */,
 				8B9D896D22199009005367BD /* AuthCoordinator.swift in Sources */,
-				8B9D8985221BCE7E005367BD /* KeyValueStorageError.swift in Sources */,
 				8BBD92E122375FCD00D480E6 /* ChatInteractorOutput.swift in Sources */,
 				8BBD930F2237B8E500D480E6 /* BaseXibView.swift in Sources */,
 				8BBD932D22394CDA00D480E6 /* PortfolioInteractorOutput.swift in Sources */,
@@ -854,6 +869,7 @@
 				8B9D89A6221BE41E005367BD /* AuthCoordinatorOutput.swift in Sources */,
 				8BBD92FA223771ED00D480E6 /* ChatTextMessage.swift in Sources */,
 				8B9D8996221BE115005367BD /* SignInInteractorInput.swift in Sources */,
+				8BA14D3422686352002F4BA4 /* UserDefaultsStorage.swift in Sources */,
 				8BBD92E522375FCD00D480E6 /* ChatAssembly.swift in Sources */,
 				8B9D8993221BE115005367BD /* SignInViewInput.swift in Sources */,
 				8B9D8967221951E5005367BD /* UIColorExtensions.swift in Sources */,

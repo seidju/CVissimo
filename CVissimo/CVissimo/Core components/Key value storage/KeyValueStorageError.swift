@@ -11,5 +11,6 @@ import Foundation
 enum KeyValueStorageError: Error {
 
   case objectNotFound
+  case serializationFailed
 
 }

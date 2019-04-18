@@ -68,6 +68,14 @@ extension ChatViewDataSource: ASCollectionDelegate, ASCollectionDataSource {
       }
     }
   }
+  
+  func shouldBatchFetch(for collectionNode: ASCollectionNode) -> Bool {
+    return false
+  }
+  
+  func collectionNode(_ collectionNode: ASCollectionNode, willBeginBatchFetchWith context: ASBatchContext) {
+    //
+  }
 
   func scrollViewDidScroll(_ scrollView: UIScrollView) {
     autoLoadMoreContentIfNeeded()
